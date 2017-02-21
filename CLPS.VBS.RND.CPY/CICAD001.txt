@@ -1,0 +1,30 @@
+         01 CICAD-REC.
+            05 CICAD-PROD-TYPE            PIC 9(03).
+            05 CICAD-NUMB                 PIC 9(16).
+            05 CICAD-STATUS               PIC 9(03).
+            05 CICAD-ACCT-NUMB            PIC 9(16).
+            05 CICAD-CUST-NUMB            PIC 9(18).
+            05 CICAD-LAST-DATE            PIC X(10).
+            05 CICAD-OPEN-DATE            PIC X(10).
+            05 CICAD-DISP-IND             PIC 9(02).
+            05 CICAD-DISP-SUBDATE         PIC X(10).
+            05 CICAD-DISP-DATE            PIC X(10).
+            05 CICAD-TYPE                 PIC 9(02).
+            05 CICAD-PRISEC-IND           PIC 9(02).
+            05 CICAD-LOCK-IND             PIC 9(02).
+            05 CICAD-LOCK-DATE            PIC X(10).
+            05 CICAD-CURR-EXPIRY-DATE     PIC X(10).
+            05 CICAD-ACTIVATE-IND         PIC 9(02).
+            05 CICAD-ACTIVATE-DATE        PIC X(10).
+            05 CICAD-CURR-ACTION          PIC 9(02).
+            05 CICAD-LAST-ACTION          PIC 9(02).
+            05 CICAD-CVV                  PIC 9(04).
+            05 CICAD-CVV2                 PIC 9(03).
+            05 CICAD-CUST-NAME            PIC X(30).
+            05 CICAD-TRNPWD-IND           PIC 9(02).
+            05 CICAD-TRNPWD               PIC 9(06).
+            05 CICAD-TRNPWD-WRGCNT        PIC 9(02).
+            05 CICAD-TRNPWD-WRGDATE       PIC X(10).
+            05 CICAD-TRNPWD-WRGTIME       PIC X(05).
+            05 CICAD-TRNPWD-LAST-DATE     PIC X(10).
+

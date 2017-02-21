@@ -1,0 +1,32 @@
+       01 CICUS-REC.
+          05 CICUS-NAME               PIC X(30).
+          05 CICUS-ENGLISH-NAME       PIC X(40).
+          05 CICUS-NATIONALITY        PIC X(20).
+          05 CICUS-BIRTH-DATE         PIC X(10).
+          05 CICUS-GENDER             PIC X(01).
+          05 CICUS-MARITAL-STATUS     PIC X(01).
+          05 CICUS-ID-TYPE            PIC 9(03).
+          05 CICUS-ID-NUMBER          PIC X(18).
+          05 CICUS-ANNUAL-SALARY      PIC 9(08).
+          05 CICUS-MOBILE             PIC 9(11).
+          05 CICUS-EMAIL              PIC X(40).
+          05 CICUS-BILL-TYPE          PIC 9(03).
+          05 CICUS-BILL-ADDR          PIC 9(03).
+          05 CICUS-BILL-DATE          PIC 9(02).
+          05 CICUS-APP-DATE           PIC X(10).
+          05 CICUS-LIVE-COUNTRY       PIC X(20).
+          05 CICUS-LIVE-PROVINCE      PIC X(20).
+          05 CICUS-LIVE-CITY          PIC X(20).
+          05 CICUS-LIVE-DISTRICT      PIC X(20).
+          05 CICUS-LIVE-ZIP-CODE      PIC 9(06).
+          05 CICUS-LIVE-ADDRESS       PIC X(40).
+          05 CICUS-LIVE-YEARS         PIC 9(03).
+          05 CICUS-COMPANY-NAME       PIC X(40).
+          05 CICUS-COMPANY-COUNTRY PIC X(20).
+          05 CICUS-COMPANY-PROVINCE PIC X(20).
+          05 CICUS-COMPANY-CITY       PIC X(20).
+          05 CICUS-COMPANY-DISTRICT PIC X(20).
+          05 CICUS-COMPANY-ZIP-CODE PIC 9(06).
+          05 CICUS-COMPANY-ADRESS     PIC X(40).
+          05 CICUS-COMPANY-SERVE-YEAR PIC 9(03).
+

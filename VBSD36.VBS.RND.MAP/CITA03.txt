@@ -1,0 +1,92 @@
+CITA03   DFHMSD TYPE=&SYSPARM,MODE=INOUT,TERM=ALL,STORAGE=AUTO,        X00010019
+               LANG=COBOL,TIOAPFX=YES,CTRL=(FREEKB),                   X00020000
+               DSATTS=(COLOR,HILIGHT),MAPATTS=(COLOR,HILIGHT)           00030000
+CITA03   DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                            00040019
+         DFHMDF POS=(1,1),LENGTH=4,                                    X00050000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00060000
+               INITIAL='CITA'                                           00070000
+         DFHMDF POS=(1,27),LENGTH=22,                                  X00080000
+               ATTRB=(PROT,BRT,ASKIP),                                 X00090000
+               INITIAL='VIRTUAL BANKING SYSTEM'                         00100000
+         DFHMDF POS=(1,62),LENGTH=5,                                   X00110000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00120000
+               INITIAL='DATE:'                                          00130000
+SYSD     DFHMDF POS=(1,68),LENGTH=10,                                  X00140000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00150000
+         DFHMDF POS=(2,1),LENGTH=12,                                   X00160000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00170000
+               INITIAL='COMMAND ===>'                                   00180000
+COMMU    DFHMDF POS=(2,16),LENGTH=4,                                   X00190000
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00200000
+               HILIGHT=UNDERLINE                                        00210000
+         DFHMDF POS=(2,21),LENGTH=1,ATTRB=ASKIP                         00220000
+         DFHMDF POS=(2,28),LENGTH=20,                                  X00230000
+               ATTRB=(PROT,BRT,ASKIP),                                 X00240000
+               INITIAL='CREDITCARD  ISSUANCE'                           00250000
+         DFHMDF POS=(2,62),LENGTH=5,                                   X00260000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00270000
+               INITIAL='TIME:'                                          00280000
+SYST     DFHMDF POS=(2,68),LENGTH=10,                                  X00290000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00300000
+         DFHMDF POS=(3,1),LENGTH=79,                                   X00310000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00320000
+               INITIAL='===============================================X00330000
+               ================================'                        00340000
+         DFHMDF POS=(5,29),LENGTH=20,                                  X00350000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00360000
+               INITIAL='MANUAL AUTHORIZATION'                           00370009
+         DFHMDF POS=(5,50),LENGTH=1,ATTRB=ASKIP                         00380000
+         DFHMDF POS=(7,02),LENGTH=19,                                  X00390009
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00400000
+               INITIAL='CARD NUMBER       :'                            00410009
+CDNUM    DFHMDF POS=(7,22),LENGTH=16,                                  X00420009
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00430020
+               HILIGHT=UNDERLINE                                        00440000
+         DFHMDF POS=(7,39),LENGTH=1,ATTRB=ASKIP                         00450009
+         DFHMDF POS=(7,48),LENGTH=17,                                  X00460013
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00461005
+               INITIAL='AUTHORIER ID    :'                              00462009
+AUTID    DFHMDF POS=(7,66),LENGTH=8,                                   X00462113
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00462220
+               HILIGHT=UNDERLINE                                        00462305
+         DFHMDF POS=(7,75),LENGTH=1,ATTRB=ASKIP                         00462413
+         DFHMDF POS=(9,2),LENGTH=19,                                   X00462709
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00462803
+               INITIAL='EXPIRATION DATE   :'                            00462909
+VILID    DFHMDF POS=(9,22),LENGTH=10,                                  X00463010
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00463120
+               HILIGHT=UNDERLINE,INITIAL='    /  /  '                   00463211
+         DFHMDF POS=(9,33),LENGTH=12,ATTRB=(PROT,BRT,ASKIP),           X00463312
+               COLOR=TURQUOISE,INITIAL='(YYYY/MM/DD)'                   00463411
+         DFHMDF POS=(9,46),LENGTH=1,ATTRB=ASKIP                         00463512
+         DFHMDF POS=(9,48),LENGTH=17,                                  X00463613
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00463703
+               INITIAL='TRANSACTION TYPE:'                              00463814
+         DFHMDF POS=(9,69),LENGTH=10,ATTRB=(UNPROT,BRT,ASKIP),         X00463920
+               COLOR=TURQUOISE,INITIAL='(01/02/03)'                     00464014
+TRATP    DFHMDF POS=(9,66),LENGTH=2,                                   X00464117
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00464222
+               HILIGHT=UNDERLINE                                        00464303
+         DFHMDF POS=(11,2),LENGTH=19,                                  X00464509
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00464603
+               INITIAL='TRANSACTION AMOUNT:'                            00464709
+TRDAT    DFHMDF POS=(11,22),LENGTH=8,                                  X00464809
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00464920
+               HILIGHT=UNDERLINE                                        00465003
+         DFHMDF POS=(11,31),LENGTH=1,ATTRB=ASKIP                        00465109
+         DFHMDF POS=(11,48),LENGTH=17,                                 X00465213
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00465303
+               INITIAL='CVV2            :'                              00465409
+CVV2     DFHMDF POS=(11,66),LENGTH=3,                                  X00465513
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00465620
+               HILIGHT=UNDERLINE                                        00465703
+         DFHMDF POS=(11,70),LENGTH=1,ATTRB=ASKIP                        00465813
+MSG      DFHMDF POS=(23,1),LENGTH=79,                                  X00465903
+               ATTRB=(PROT,BRT,ASKIP),COLOR=YELLOW                      00466003
+KEY      DFHMDF POS=(24,1),LENGTH=79,                                  X00466103
+               ATTRB=(PROT,BRT,ASKIP),                                 X00466203
+               INITIAL='PF1=MAIN MENU PF3=EXIT PF5=CUST INQUIRE PF6=CARX00466307
+               D INQUIRE PF9=REFRESH ENTER=PROCESS'                     00466421
+         DFHMSD TYPE=FINAL                                              00466503
+         END                                                            00466603
+

@@ -1,0 +1,38 @@
+       01 CIC0025O-REC.
+          05 CIC0025O-CUST.
+             10 CIC0025O-NAME            PIC X(30).
+             10 CIC0025O-ENGLISH-NAME    PIC X(40).
+             10 CIC0025O-NATIONALITY     PIC X(20).
+             10 CIC0025O-BIRTH-DATE      PIC X(10).
+             10 CIC0025O-GENDER          PIC X(01).
+             10 CIC0025O-MARITAL-STATUS  PIC X(01).
+             10 CIC0025O-ID-TYPE         PIC 9(03).
+             10 CIC0025O-ID-NUMBER       PIC X(18).
+             10 CIC0025O-ANNUAL-SALARY   PIC 9(08).
+             10 CIC0025O-MOBILE          PIC 9(11).
+             10 CIC0025O-EMAIL           PIC X(40).
+             10 CIC0025O-BILL-TYPE       PIC 9(03).
+             10 CIC0025O-BILL-ADDR       PIC 9(03).
+             10 CIC0025O-BILL-DATE       PIC 9(02).
+             10 CIC0025O-APP-DATE        PIC X(10).
+             10 CIC0025O-LIVE-COUNTRY    PIC X(20).
+             10 CIC0025O-LIVE-PROVINCE   PIC X(20).
+             10 CIC0025O-LIVE-CITY       PIC X(20).
+             10 CIC0025O-LIVE-DISTRICT   PIC X(20).
+             10 CIC0025O-LIVE-ZIP-CODE   PIC 9(06).
+             10 CIC0025O-LIVE-ADDRESS    PIC X(40).
+             10 CIC0025O-LIVE-YEARS      PIC 9(03).
+             10 CIC0025O-COMPANY-NAME    PIC X(40).
+             10 CIC0025O-COMPANY-COUNTRY PIC X(20).
+             10 CIC0025O-COMPANY-PROVINCE PIC X(20).
+             10 CIC0025O-COMPANY-CITY    PIC X(20).
+             10 CIC0025O-COMPANY-DISTRICT PIC X(20).
+             10 CIC0025O-COMPANY-ZIP-CODE PIC 9(06).
+             10 CIC0025O-COMPANY-ADRESS  PIC X(40).
+             10 CIC0025O-COMPANY-SERVE-YEAR PIC 9(03).
+             10 CIC0025O-QURPWD          PIC 9(6).
+             10 CIC0025O-QURPWD-WRGCNT   PIC 9(2).
+             10 CIC0025O-QURPWD-WRGDATE  PIC X(10).
+             10 CIC0025O-QURPWD-WRGTIME  PIC X(5).
+             10 CIC0025O-QURPWD-LAST-DATE   PIC X(10).
+

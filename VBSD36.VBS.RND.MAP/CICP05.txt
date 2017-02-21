@@ -1,0 +1,67 @@
+CICP05   DFHMSD TYPE=&SYSPARM,MODE=INOUT,TERM=ALL,STORAGE=AUTO,        X00010001
+               LANG=COBOL,TIOAPFX=YES,CTRL=(FREEKB),                   X00020000
+               DSATTS=(COLOR,HILIGHT),MAPATTS=(COLOR,HILIGHT)           00030000
+CICP05   DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                            00040001
+         DFHMDF POS=(1,1),LENGTH=4,                                    X00050000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00060000
+               INITIAL='CIP5'                                           00070001
+         DFHMDF POS=(1,27),LENGTH=22,                                  X00080000
+               ATTRB=(PROT,BRT,ASKIP),                                 X00090000
+               INITIAL='VIRTUAL BANKING SYSTEM'                         00100000
+         DFHMDF POS=(1,62),LENGTH=5,                                   X00110000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00120000
+               INITIAL='DATE:'                                          00130000
+SYSD     DFHMDF POS=(1,68),LENGTH=10,                                  X00140000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00150000
+         DFHMDF POS=(2,1),LENGTH=12,                                   X00160000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00170000
+               INITIAL='COMMAND ===>'                                   00180000
+COMMU    DFHMDF POS=(2,16),LENGTH=4,                                   X00190000
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00200000
+               HILIGHT=UNDERLINE                                        00210000
+         DFHMDF POS=(2,21),LENGTH=1,ATTRB=ASKIP                         00220000
+         DFHMDF POS=(2,28),LENGTH=20,                                  X00230000
+               ATTRB=(PROT,BRT,ASKIP),                                 X00240000
+               INITIAL='CREDITCARD  ISSUANCE'                           00250000
+         DFHMDF POS=(2,62),LENGTH=5,                                   X00260000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00270000
+               INITIAL='TIME:'                                          00280000
+SYST     DFHMDF POS=(2,68),LENGTH=10,                                  X00290000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00300000
+         DFHMDF POS=(3,1),LENGTH=79,                                   X00310000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00320000
+               INITIAL='===============================================X00330000
+               ================================'                        00340000
+         DFHMDF POS=(5,32),LENGTH=20,                                  X00341002
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00342002
+               INITIAL='CREDIT CARD CREATION'                           00343002
+         DFHMDF POS=(7,21),LENGTH=19,                                  X00350004
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00360000
+               INITIAL='APPLICATION    ID: '                            00370004
+APPID    DFHMDF POS=(7,41),LENGTH=13,                                  X00371007
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00372000
+               HILIGHT=UNDERLINE                                        00373000
+         DFHMDF POS=(7,55),LENGTH=1,ATTRB=ASKIP                         00374008
+         DFHMDF POS=(9,21),LENGTH=19,                                  X00380004
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00390000
+               INITIAL='PRIMARY CARD   NO: '                            00400005
+PRICARD  DFHMDF POS=(9,41),LENGTH=16,                                  X00410006
+               ATTRB=(UNPROT,NORM,NUM),COLOR=TURQUOISE,                X00420000
+               HILIGHT=UNDERLINE                                        00430000
+         DFHMDF POS=(9,58),LENGTH=1,ATTRB=ASKIP                         00434008
+         DFHMDF POS=(11,21),LENGTH=19,                                 X00490004
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00500000
+               INITIAL='SECONDARY CARD NO: '                            00510004
+SECCARD  DFHMDF POS=(11,41),LENGTH=16,                                 X00511008
+               ATTRB=(UNPROT,NORM,NUM),COLOR=TURQUOISE,                X00512000
+               HILIGHT=UNDERLINE                                        00513000
+         DFHMDF POS=(11,58),LENGTH=1,ATTRB=ASKIP                        00520009
+MSG      DFHMDF POS=(23,1),LENGTH=79,                                  X00580000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=YELLOW                      00590000
+KEY      DFHMDF POS=(24,1),LENGTH=79,                                  X00600000
+               ATTRB=(PROT,BRT,ASKIP),                                 X00610000
+               INITIAL='PF1=RETURN PF3=EXIT PF6=VIPCARD PF9=REFRESH ENTX00620010
+               ER=PRODUCE CARD'                                         00621010
+         DFHMSD TYPE=FINAL                                              00630000
+         END                                                            00640000
+

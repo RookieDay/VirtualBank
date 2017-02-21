@@ -1,0 +1,135 @@
+CICA06   DFHMSD TYPE=&SYSPARM,MODE=INOUT,TERM=ALL,STORAGE=AUTO,        X00020040
+               LANG=COBOL,TIOAPFX=YES,CTRL=(FREEKB),                   X00030000
+               DSATTS=(COLOR,HILIGHT),MAPATTS=(COLOR,HILIGHT)           00040000
+CICA06   DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                            00050040
+         DFHMDF POS=(1,1),LENGTH=4,                                    X00060001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00060103
+               INITIAL='CICA'                                           00061018
+         DFHMDF POS=(1,27),LENGTH=22,                                  X00071112
+               ATTRB=(PROT,BRT,ASKIP),                                 X00071203
+               INITIAL='VIRTUAL BANKING SYSTEM'                         00071312
+         DFHMDF POS=(1,62),LENGTH=5,                                   X00072001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00073003
+               INITIAL='DATE:'                                          00074001
+SYSD     DFHMDF POS=(1,68),LENGTH=10,                                  X00090003
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00091004
+         DFHMDF POS=(2,1),LENGTH=12,                                   X00100001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00101002
+               INITIAL='COMMAND ===>'                                   00110001
+COMMU    DFHMDF POS=(2,16),LENGTH=4,                                   X00130001
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00131003
+               HILIGHT=UNDERLINE                                        00140001
+         DFHMDF POS=(2,21),LENGTH=1,ATTRB=ASKIP                         00150038
+         DFHMDF POS=(2,28),LENGTH=20,                                  X00160012
+               ATTRB=(PROT,BRT,ASKIP),                                 X00160103
+               INITIAL='CREDITCARD  ISSUANCE'                           00160212
+         DFHMDF POS=(2,62),LENGTH=5,                                   X00160303
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00160403
+               INITIAL='TIME:'                                          00160503
+SYST     DFHMDF POS=(2,68),LENGTH=10,                                  X00160603
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00160704
+         DFHMDF POS=(3,1),LENGTH=79,                                   X00161011
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00161103
+               INITIAL='===============================================X00162011
+               ================================'                        00162111
+         DFHMDF POS=(5,29),LENGTH=17,                                  X00162243
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00162312
+               INITIAL='INVESTIGATE SCORE'                              00162441
+         DFHMDF POS=(7,2),LENGTH=21,                                   X00162541
+               ATTRB=(PROT,BRT,ASKIP),COLOR=YELLOW,                    X00162642
+               INITIAL='''PRESS F2 TO COMPUTE'''                        00162742
+         DFHMDF POS=(8,2),LENGTH=18,                                   X00162846
+               ATTRB=(PROT,ASKIP),COLOR=TURQUOISE,                     X00162941
+               INITIAL='COMPUTED   LIMIT :'                             00163041
+COMPL    DFHMDF POS=(8,21),LENGTH=8,                                   X00163146
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00163241
+               HILIGHT=UNDERLINE                                        00163341
+         DFHMDF POS=(8,30),LENGTH=1,ATTRB=ASKIP                         00163441
+         DFHMDF POS=(8,37),LENGTH=17,                                  X00163546
+               ATTRB=(PROT,ASKIP),COLOR=TURQUOISE,                     X00163628
+               INITIAL='COMPUTED RESULT :'                              00163741
+COMPR    DFHMDF POS=(8,55),LENGTH=3,                                   X00164046
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00165012
+               HILIGHT=UNDERLINE                                        00165112
+         DFHMDF POS=(8,59),LENGTH=19,                                  X00165241
+               ATTRB=(PROT,ASKIP),COLOR=TURQUOISE,                     X00165341
+               INITIAL='(001-PASS 002-FAIL)'                            00165444
+         DFHMDF POS=(9,2),LENGTH=18,                                   X00165646
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00165712
+               INITIAL='REFUSE    REASON :'                             00166041
+REFUR1   DFHMDF POS=(9,21),LENGTH=3,                                   X00166246
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00166312
+               HILIGHT=UNDERLINE                                        00166412
+         DFHMDF POS=(9,25),LENGTH=40,                                  X00167041
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00168012
+               INITIAL='(001-NO REFUSE 002-NORMAL CREDIT REFUSE)'       00169044
+         DFHMDF POS=(10,25),LENGTH=28,                                 X00169141
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00169241
+               INITIAL='(003-ADVANCED CREDIT REFUSE)'                   00169344
+         DFHMDF POS=(11,25),LENGTH=26,                                 X00169441
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00169541
+               INITIAL='(004-SENIOR CREDIT REFUSE)'                     00169644
+         DFHMDF POS=(13,30),LENGTH=15,                                 X00170041
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00180028
+               INITIAL='MANUL CREDITING'                                00190041
+         DFHMDF POS=(15,2),LENGTH=18,                                  X00200046
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00210041
+               INITIAL='CREDITING     ID :'                             00220041
+CREDI    DFHMDF POS=(15,21),LENGTH=8,                                  X00321046
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00322017
+               HILIGHT=UNDERLINE                                        00323017
+         DFHMDF POS=(15,30),LENGTH=1,ATTRB=ASKIP                        00323141
+         DFHMDF POS=(15,37),LENGTH=16,                                 X00324046
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00325017
+               INITIAL='CREDITING DATE :'                               00326041
+CREDD    DFHMDF POS=(15,54),LENGTH=10,                                 X00326146
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00326241
+               HILIGHT=UNDERLINE                                        00326341
+         DFHMDF POS=(15,65),LENGTH=1,ATTRB=ASKIP                        00326441
+         DFHMDF POS=(16,2),LENGTH=18,                                  X00326546
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00326628
+               INITIAL='CREDITING RESULT :'                             00326741
+CREDR    DFHMDF POS=(16,21),LENGTH=3,                                  X00326846
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00326917
+               HILIGHT=UNDERLINE                                        00327017
+         DFHMDF POS=(16,25),LENGTH=19,                                 X00327141
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00327217
+               INITIAL='(001-PASS 002-FAIL)'                            00327344
+         DFHMDF POS=(17,2),LENGTH=18,                                  X00327546
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00327628
+               INITIAL='REFUSE    REASON :'                             00327741
+REFUR2   DFHMDF POS=(17,21),LENGTH=3,                                  X00328146
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00328228
+               HILIGHT=UNDERLINE                                        00328328
+         DFHMDF POS=(17,25),LENGTH=40,                                 X00328441
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00328517
+               INITIAL='(001-NO REFUSE 002-NORMAL CREDIT REFUSE)'       00328644
+         DFHMDF POS=(18,25),LENGTH=28,                                 X00328741
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00328828
+               INITIAL='(003-ADVANCED CREDIT REFUSE)'                   00328944
+         DFHMDF POS=(19,25),LENGTH=26,                                 X00329045
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00329141
+               INITIAL='(004-SENIOR CREDIT REFUSE)'                     00329244
+         DFHMDF POS=(20,2),LENGTH=9,                                   X00329346
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00329428
+               INITIAL='COMMENT :'                                      00329541
+COMMT    DFHMDF POS=(20,12),LENGTH=60,                                 X00330547
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00330629
+               HILIGHT=UNDERLINE                                        00330729
+         DFHMDF POS=(20,73),LENGTH=1,ATTRB=ASKIP                        00330841
+         DFHMDF POS=(21,2),LENGTH=13,                                  X00330946
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00331041
+               INITIAL='FINAL LIMIT :'                                  00331141
+FINL     DFHMDF POS=(21,16),LENGTH=8,                                  X00331246
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00331341
+               HILIGHT=UNDERLINE                                        00331441
+         DFHMDF POS=(21,25),LENGTH=1,ATTRB=ASKIP                        00331541
+MSG      DFHMDF POS=(23,1),LENGTH=79,                                  X00331632
+               ATTRB=(PROT,BRT,ASKIP),COLOR=YELLOW                      00332027
+KEY      DFHMDF POS=(24,1),LENGTH=79,                                  X00340032
+               ATTRB=(PROT,BRT,ASKIP),                                 X00341003
+               INITIAL='PF1=MAIN MENU PF2=COMPUTE PF3=EXIT PF7=PREV PF9X00350048
+               =REFRESH ENTER=PROCESS'                                  00351048
+         DFHMSD TYPE=FINAL                                              00360000
+         END                                                            00370000
+

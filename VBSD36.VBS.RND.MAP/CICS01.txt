@@ -1,0 +1,53 @@
+CICS01   DFHMSD TYPE=&SYSPARM,MODE=INOUT,TERM=ALL,STORAGE=AUTO,        X00010014
+               LANG=COBOL,TIOAPFX=YES,CTRL=(FREEKB),                   X00020013
+               DSATTS=(COLOR,HILIGHT),MAPATTS=(COLOR,HILIGHT)           00030013
+CICS01   DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                            00040014
+         DFHMDF POS=(1,1),LENGTH=4,                                    X00050013
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00060013
+               INITIAL='CI01'                                           00070013
+         DFHMDF POS=(1,27),LENGTH=22,                                  X00080013
+               ATTRB=(PROT,BRT,ASKIP),                                 X00090013
+               INITIAL='VIRTUAL BANKING SYSTEM'                         00100013
+         DFHMDF POS=(1,62),LENGTH=5,                                   X00110013
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00120013
+               INITIAL='DATE:'                                          00130013
+SYSD     DFHMDF POS=(1,68),LENGTH=10,                                  X00140013
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00150013
+         DFHMDF POS=(2,1),LENGTH=12,                                   X00160013
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00170013
+               INITIAL='COMMAND ===>'                                   00180013
+COMMU    DFHMDF POS=(2,16),LENGTH=4,                                   X00190013
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00191013
+               HILIGHT=UNDERLINE                                        00192013
+         DFHMDF POS=(2,21),LENGTH=1,ATTRB=ASKIP                         00193013
+         DFHMDF POS=(2,28),LENGTH=20,                                  X00194013
+               ATTRB=(PROT,BRT,ASKIP),                                 X00195013
+               INITIAL='CREDITCARD  ISSUANCE'                           00196013
+         DFHMDF POS=(2,62),LENGTH=5,                                   X00197013
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00198013
+               INITIAL='TIME:'                                          00199013
+SYST     DFHMDF POS=(2,68),LENGTH=10,                                  X00199113
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00199213
+         DFHMDF POS=(3,1),LENGTH=79,                                   X00199313
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00199413
+               INITIAL='===============================================X00199513
+               ================================'                        00199613
+         DFHMDF POS=(7,9),LENGTH=15,ATTRB=ASKIP,COLOR=TURQUOISE,       X00200010
+               INITIAL='ID TYPE      : '                                00210010
+TID      DFHMDF POS=(7,24),LENGTH=03,ATTRB=(UNPROT,IC),                X00220016
+               HILIGHT=UNDERLINE,COLOR=TURQUOISE                        00230011
+         DFHMDF POS=(7,28),LENGTH=1,ATTRB=ASKIP                         00231010
+         DFHMDF POS=(7,29),LENGTH=26,ATTRB=ASKIP,COLOR=TURQUOISE,      X00240008
+               INITIAL='(001-ID CARD 002-PASSPORT)'                     00250017
+         DFHMDF POS=(9,9),LENGTH=14,ATTRB=ASKIP,COLOR=TURQUOISE,       X00260016
+               INITIAL='ID NUMBER    :'                                 00270003
+NID      DFHMDF POS=(9,24),LENGTH=18,ATTRB=(UNPROT,IC),                X00280016
+               HILIGHT=UNDERLINE,COLOR=TURQUOISE                        00290011
+         DFHMDF POS=(9,43),LENGTH=1,ATTBR=ASKIP                         00300007
+MSG      DFHMDF POS=(23,1),LENGTH=70,ATTRB=ASKIP,COLOR=YELLOW           00310003
+         DFHMDF POS=(23,72),LENGTH=1,ATTRB=PROT                         00320003
+KEY      DFHMDF POS=(24,1),LENGTH=70,ATTRB=ASKIP,COLOR=NEUTRAL,        X00330003
+               INITIAL='PF3=END SESSION  PF9=REFRESH  ENTER=PROCESS'    00340003
+         DFHMSD TYPE=FINAL                                              00350003
+         END                                                            00360003
+

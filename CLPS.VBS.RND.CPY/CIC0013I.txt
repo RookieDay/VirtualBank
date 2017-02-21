@@ -1,0 +1,30 @@
+         01 CIC0013I-REC.
+            05 CIC0013I-PROD-TYPE         PIC 9(03).
+            05 CIC0013I-NUMB              PIC 9(16).
+            05 CIC0013I-STATUS            PIC 9(03).
+            05 CIC0013I-ACCT-NUMB         PIC 9(16).
+            05 CIC0013I-CUST-NUMB         PIC 9(18).
+            05 CIC0013I-LAST-DATE         PIC X(10).
+            05 CIC0013I-OPEN-DATE         PIC X(10).
+            05 CIC0013I-DISP-IND          PIC 9(02).
+            05 CIC0013I-DISP-SUBDATE      PIC X(10).
+            05 CIC0013I-DISP-DATE         PIC X(10).
+            05 CIC0013I-TYPE              PIC 9(02).
+            05 CIC0013I-PRISEC-IND        PIC 9(02).
+            05 CIC0013I-LOCK-IND          PIC 9(02).
+            05 CIC0013I-LOCK-DATE         PIC X(10).
+            05 CIC0013I-CURR-EXPIRY-DATE  PIC X(10).
+            05 CIC0013I-ACTIVATE-IND      PIC 9(02).
+            05 CIC0013I-ACTIVATE-DATE     PIC X(10).
+            05 CIC0013I-CURR-ACTION       PIC 9(02).
+            05 CIC0013I-LAST-ACTION       PIC 9(02).
+            05 CIC0013I-CVV               PIC 9(04).
+            05 CIC0013I-CVV2              PIC 9(03).
+            05 CIC0013I-CUST-NAME         PIC X(30).
+            05 CIC0013I-TRNPWD-IND        PIC 9(02).
+            05 CIC0013I-TRNPWD            PIC 9(06).
+            05 CIC0013I-TRNPWD-WRGCNT     PIC 9(02).
+            05 CIC0013I-TRNPWD-WRGDATE    PIC X(10).
+            05 CIC0013I-TRNPWD-WRGTIME    PIC X(05).
+            05 CIC0013I-TRNPWD-LAST-DATE  PIC X(10).
+

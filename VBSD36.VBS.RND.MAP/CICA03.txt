@@ -1,0 +1,261 @@
+CICA03   DFHMSD TYPE=&SYSPARM,MODE=INOUT,TERM=ALL,STORAGE=AUTO,        X00010001
+               LANG=COBOL,TIOAPFX=YES,CTRL=(FREEKB),                   X00020000
+               DSATTS=(COLOR,HILIGHT),MAPATTS=(COLOR,HILIGHT)           00030000
+CICA03   DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                            00040001
+         DFHMDF POS=(1,1),LENGTH=4,                                    X00050000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00060000
+               INITIAL='CIMN'                                           00070000
+         DFHMDF POS=(1,27),LENGTH=22,                                  X00080000
+               ATTRB=(PROT,BRT,ASKIP),                                 X00090000
+               INITIAL='VIRTUAL BANKING SYSTEM'                         00100000
+         DFHMDF POS=(1,62),LENGTH=5,                                   X00110000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00120000
+               INITIAL='DATE:'                                          00130000
+SYSD     DFHMDF POS=(1,68),LENGTH=10,                                  X00140000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00150000
+         DFHMDF POS=(2,1),LENGTH=12,                                   X00160000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00161000
+               INITIAL='COMMAND ===>'                                   00162000
+COMMU    DFHMDF POS=(2,16),LENGTH=4,                                   X00162100
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00162200
+               HILIGHT=UNDERLINE                                        00162300
+         DFHMDF POS=(2,21),LENGTH=1,ATTRB=ASKIP                         00162400
+         DFHMDF POS=(2,28),LENGTH=20,                                  X00162500
+               ATTRB=(PROT,BRT,ASKIP),                                 X00162600
+               INITIAL='CREDITCARD  ISSUANCE'                           00162700
+         DFHMDF POS=(2,62),LENGTH=5,                                   X00162800
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00162900
+               INITIAL='TIME:'                                          00163000
+SYST     DFHMDF POS=(2,68),LENGTH=10,                                  X00163100
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00163200
+         DFHMDF POS=(3,1),LENGTH=79,                                   X00163300
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00163400
+               INITIAL='===============================================X00163500
+               ================================'                        00163600
+TITLE    DFHMDF POS=(5,26),LENGTH=30,                                  X00163701
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00163803
+*********************************************************************** 00164001
+         DFHMDF POS=(7,4),LENGTH=13,                                   X00164301
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00164401
+               INITIAL='APPLICATIONID'                                  00164601
+         DFHMDF POS=(7,18),LENGTH=13,                                  X00164701
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00164801
+               INITIAL='CUSTOMER NAME'                                  00164901
+         DFHMDF POS=(7,34),LENGTH=10,                                  X00165001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00165101
+               INITIAL='ID  NUMBER'                                     00165201
+         DFHMDF POS=(7,53),LENGTH=12,                                  X00165301
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00165401
+               INITIAL='LAST PROCESS'                                   00165501
+         DFHMDF POS=(7,70),LENGTH=6,                                   X00165601
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE,                 X00165701
+               INITIAL='STATUS'                                         00165801
+*********************************************************************** 00165901
+OPT1     DFHMDF POS=(8,2),LENGTH=1,                                    X00166001
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00166101
+               HILIGHT=UNDERLINE                                        00166201
+APPID1   DFHMDF POS=(8,4),LENGTH=13,                                   X00166301
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00166401
+NAME1    DFHMDF POS=(8,18),LENGTH=15,                                  X00166601
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00166701
+IDNUM1   DFHMDF POS=(8,34),LENGTH=18,                                  X00166901
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00167001
+LAST1    DFHMDF POS=(8,53),LENGTH=16,                                  X00167204
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00167301
+STAT1    DFHMDF POS=(8,70),LENGTH=9,                                   X00167501
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00167601
+*********************************************************************** 00167701
+OPT2     DFHMDF POS=(9,2),LENGTH=1,                                    X00167801
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00167901
+               HILIGHT=UNDERLINE                                        00168001
+APPID2   DFHMDF POS=(9,4),LENGTH=13,                                   X00168101
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00168201
+NAME2    DFHMDF POS=(9,18),LENGTH=15,                                  X00168301
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00168401
+IDNUM2   DFHMDF POS=(9,34),LENGTH=18,                                  X00168501
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00168601
+LAST2    DFHMDF POS=(9,53),LENGTH=16,                                  X00168704
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00168801
+STAT2    DFHMDF POS=(9,70),LENGTH=9,                                   X00168901
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00169001
+*********************************************************************** 00169101
+OPT3     DFHMDF POS=(10,2),LENGTH=1,                                   X00169201
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00169301
+               HILIGHT=UNDERLINE                                        00169401
+APPID3   DFHMDF POS=(10,4),LENGTH=13,                                  X00169501
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00169601
+NAME3    DFHMDF POS=(10,18),LENGTH=15,                                 X00169701
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00169801
+IDNUM3   DFHMDF POS=(10,34),LENGTH=18,                                 X00169901
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00170001
+LAST3    DFHMDF POS=(10,53),LENGTH=16,                                 X00171004
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00172001
+STAT3    DFHMDF POS=(10,70),LENGTH=9,                                  X00173001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00174001
+*********************************************************************** 00175001
+OPT4     DFHMDF POS=(11,2),LENGTH=1,                                   X00176001
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00177001
+               HILIGHT=UNDERLINE                                        00178001
+APPID4   DFHMDF POS=(11,4),LENGTH=13,                                  X00179001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00180001
+NAME4    DFHMDF POS=(11,18),LENGTH=15,                                 X00190001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00200001
+IDNUM4   DFHMDF POS=(11,34),LENGTH=18,                                 X00210001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00220001
+LAST4    DFHMDF POS=(11,53),LENGTH=16,                                 X00230004
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00240001
+STAT4    DFHMDF POS=(11,70),LENGTH=9,                                  X00250001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00251001
+*********************************************************************** 00252001
+OPT5     DFHMDF POS=(12,2),LENGTH=1,                                   X00253001
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00254001
+               HILIGHT=UNDERLINE                                        00255001
+APPID5   DFHMDF POS=(12,4),LENGTH=13,                                  X00256001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00257001
+NAME5    DFHMDF POS=(12,18),LENGTH=15,                                 X00258001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00259001
+IDNUM5   DFHMDF POS=(12,34),LENGTH=18,                                 X00259101
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00259201
+LAST5    DFHMDF POS=(12,53),LENGTH=16,                                 X00259304
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00259401
+STAT5    DFHMDF POS=(12,70),LENGTH=9,                                  X00259501
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00259601
+*********************************************************************** 00259701
+OPT6     DFHMDF POS=(13,2),LENGTH=1,                                   X00259801
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00259901
+               HILIGHT=UNDERLINE                                        00260001
+APPID6   DFHMDF POS=(13,4),LENGTH=13,                                  X00261001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00262001
+NAME6    DFHMDF POS=(13,18),LENGTH=15,                                 X00263001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00264001
+IDNUM6   DFHMDF POS=(13,34),LENGTH=18,                                 X00265001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00266001
+LAST6    DFHMDF POS=(13,53),LENGTH=16,                                 X00267004
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00268001
+STAT6    DFHMDF POS=(13,70),LENGTH=9,                                  X00269001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00269101
+*********************************************************************** 00269201
+OPT7     DFHMDF POS=(14,2),LENGTH=1,                                   X00269301
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00269401
+               HILIGHT=UNDERLINE                                        00269501
+APPID7   DFHMDF POS=(14,4),LENGTH=13,                                  X00269601
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00269701
+NAME7    DFHMDF POS=(14,18),LENGTH=15,                                 X00269801
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00269901
+IDNUM7   DFHMDF POS=(14,34),LENGTH=18,                                 X00270001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00271001
+LAST7    DFHMDF POS=(14,53),LENGTH=16,                                 X00272004
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00273001
+STAT7    DFHMDF POS=(14,70),LENGTH=9,                                  X00274001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00275001
+*********************************************************************** 00276001
+OPT8     DFHMDF POS=(15,2),LENGTH=1,                                   X00277001
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00278001
+               HILIGHT=UNDERLINE                                        00279001
+APPID8   DFHMDF POS=(15,4),LENGTH=13,                                  X00279101
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00279201
+NAME8    DFHMDF POS=(15,18),LENGTH=15,                                 X00279301
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00279401
+IDNUM8   DFHMDF POS=(15,34),LENGTH=18,                                 X00279501
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00279601
+LAST8    DFHMDF POS=(15,53),LENGTH=16,                                 X00279704
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00279801
+STAT8    DFHMDF POS=(15,70),LENGTH=9,                                  X00279901
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00280001
+*********************************************************************** 00281001
+OPT9     DFHMDF POS=(16,2),LENGTH=1,                                   X00282001
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00283001
+               HILIGHT=UNDERLINE                                        00284001
+APPID9   DFHMDF POS=(16,4),LENGTH=13,                                  X00285001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00286001
+NAME9    DFHMDF POS=(16,18),LENGTH=15,                                 X00287001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00288001
+IDNUM9   DFHMDF POS=(16,34),LENGTH=18,                                 X00289001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00289101
+LAST9    DFHMDF POS=(16,53),LENGTH=16,                                 X00289204
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00289301
+STAT9    DFHMDF POS=(16,70),LENGTH=9,                                  X00289401
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00289501
+*********************************************************************** 00289601
+OPT10    DFHMDF POS=(17,2),LENGTH=1,                                   X00289701
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00289801
+               HILIGHT=UNDERLINE                                        00289901
+APPID10  DFHMDF POS=(17,4),LENGTH=13,                                  X00290001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00291001
+NAME10   DFHMDF POS=(17,18),LENGTH=15,                                 X00292001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00293001
+IDNUM10  DFHMDF POS=(17,34),LENGTH=18,                                 X00294001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00295001
+LAST10   DFHMDF POS=(17,53),LENGTH=16,                                 X00296004
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00297001
+STAT10   DFHMDF POS=(17,70),LENGTH=9,                                  X00298001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00299001
+*********************************************************************** 00299101
+OPT11    DFHMDF POS=(18,2),LENGTH=1,                                   X00299201
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00299301
+               HILIGHT=UNDERLINE                                        00299401
+APPID11  DFHMDF POS=(18,4),LENGTH=13,                                  X00299501
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00299601
+NAME11   DFHMDF POS=(18,18),LENGTH=15,                                 X00299701
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00299801
+IDNUM11  DFHMDF POS=(18,34),LENGTH=18,                                 X00299901
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00300001
+LAST11   DFHMDF POS=(18,53),LENGTH=16,                                 X00301004
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00302001
+STAT11   DFHMDF POS=(18,70),LENGTH=9,                                  X00303001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00304001
+*********************************************************************** 00305001
+OPT12    DFHMDF POS=(19,2),LENGTH=1,                                   X00306001
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00307001
+               HILIGHT=UNDERLINE                                        00308001
+APPID12  DFHMDF POS=(19,4),LENGTH=13,                                  X00309001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00309101
+NAME12   DFHMDF POS=(19,18),LENGTH=15,                                 X00309201
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00309301
+IDNUM12  DFHMDF POS=(19,34),LENGTH=18,                                 X00309401
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00309501
+LAST12   DFHMDF POS=(19,53),LENGTH=16,                                 X00309604
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00309701
+STAT12   DFHMDF POS=(19,70),LENGTH=9,                                  X00309801
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00309901
+*********************************************************************** 00310001
+OPT13    DFHMDF POS=(20,2),LENGTH=1,                                   X00310101
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00310201
+               HILIGHT=UNDERLINE                                        00310301
+APPID13  DFHMDF POS=(20,4),LENGTH=13,                                  X00310401
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00310501
+NAME13   DFHMDF POS=(20,18),LENGTH=15,                                 X00310601
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00310701
+IDNUM13  DFHMDF POS=(20,34),LENGTH=18,                                 X00310801
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00310901
+LAST13   DFHMDF POS=(20,53),LENGTH=16,                                 X00311004
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00311101
+STAT13   DFHMDF POS=(20,70),LENGTH=9,                                  X00311201
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00311301
+*********************************************************************** 00311401
+OPT14    DFHMDF POS=(21,2),LENGTH=1,                                   X00311501
+               ATTRB=(UNPROT,NORM),COLOR=TURQUOISE,                    X00311601
+               HILIGHT=UNDERLINE                                        00311701
+APPID14  DFHMDF POS=(21,4),LENGTH=13,                                  X00311801
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00311901
+NAME14   DFHMDF POS=(21,18),LENGTH=15,                                 X00312001
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00312101
+IDNUM14  DFHMDF POS=(21,34),LENGTH=18,                                 X00312201
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00312301
+LAST14   DFHMDF POS=(21,53),LENGTH=16,                                 X00312404
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00312501
+STAT14   DFHMDF POS=(21,70),LENGTH=9,                                  X00312601
+               ATTRB=(PROT,BRT,ASKIP),COLOR=TURQUOISE                   00312701
+*********************************************************************** 00313001
+         DFHMDF POS=(22,6),LENGTH=16,                                  X00314001
+               ATTRB=(PROT,BRT,ASKIP),                                 X00315001
+               INITIAL='OPTION: S-SELECT'                               00316001
+MSG      DFHMDF POS=(23,1),LENGTH=79,                                  X00320000
+               ATTRB=(PROT,BRT,ASKIP),COLOR=YELLOW                      00330000
+KEY      DFHMDF POS=(24,1),LENGTH=79,                                  X00340000
+               ATTRB=(PROT,BRT,ASKIP),                                 X00341000
+               INITIAL='F1=RETURN PF3=EXIT F7=PREV F8=NEXT F9=REFRESH EX00350004
+               NTER=PROCESS'                                            00351004
+         DFHMSD TYPE=FINAL                                              00360000
+         END                                                            00370000
+

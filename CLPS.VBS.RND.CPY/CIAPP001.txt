@@ -1,0 +1,37 @@
+       01 CIAPP-REC.
+          05 CIAPP-ID                    PIC 9(13).
+          05 CIAPP-IN-DATE               PIC X(10).
+          05 CIAPP-IN-TIME               PIC X(05).
+          05 CIAPP-STATUS                PIC 9(03).
+          05 CIAPP-ID-TYPE               PIC 9(03).
+          05 CIAPP-ID-NUMBER             PIC X(18).
+          05 CIAPP-LAST-DATE             PIC X(10).
+          05 CIAPP-LAST-TIME             PIC X(05).
+          05 CIAPP-INTCHK-ID             PIC X(08).
+          05 CIAPP-INTCHK-DATE           PIC X(10).
+          05 CIAPP-INTCHK-RESULT         PIC 9(03).
+          05 CIAPP-INTCHK-REFUSE-REASON  PIC 9(03).
+          05 CIAPP-INTCHK-COMMENT        PIC X(60).
+          05 CIAPP-REVIEW-ID             PIC X(08).
+          05 CIAPP-REVIEW-DATE           PIC X(10).
+          05 CIAPP-REVIEW-RESULT         PIC 9(03).
+          05 CIAPP-REVIEW-REFUSE-REASON  PIC 9(03).
+          05 CIAPP-REVIEW-COMMENT        PIC X(60).
+          05 CIAPP-CREINV-ID             PIC X(08).
+          05 CIAPP-CREINV-DATE           PIC X(10).
+          05 CIAPP-CREINV-RESULT         PIC X(03).
+          05 CIAPP-CREINV-REFUSE-REASON  PIC X(03).
+          05 CIAPP-CREINV-COMMENT        PIC X(60).
+          05 CIAPP-ACCT-COUNT            PIC 9(03).
+          05 CIAPP-CREDIT-HISTORY        PIC 9(03).
+          05 CIAPP-CREDIT-HOLD           PIC 9(03).
+          05 CIAPP-MANCRE-ID             PIC X(08).
+          05 CIAPP-MANCRE-DATE           PIC X(10).
+          05 CIAPP-MANCRE-RESULT         PIC 9(03).
+          05 CIAPP-MANCRE-REFUSE-REASON  PIC X(03).
+          05 CIAPP-MANCRE-COMMENT        PIC X(60).
+          05 CIAPP-COMPUTE-LIMIT         PIC 9(08).
+          05 CIAPP-COMPUTE-RESULT        PIC 9(03).
+          05 CIAPP-COMPUTE-REFUSE-REASON PIC 9(03).
+          05 CIAPP-FINAL-LIMIT           PIC 9(08).
+

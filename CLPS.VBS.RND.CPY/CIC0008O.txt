@@ -1,0 +1,5 @@
+       01 CIC0008O-REC.
+          05 CIC0008O-COUNT        PIC 9(3).
+          05 CIC0008O-APPL.
+             10 CIC0008O-APPL-ID   PIC 9(13) OCCURS 14 TIMES.
+
