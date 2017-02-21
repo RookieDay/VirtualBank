@@ -4,5 +4,9 @@
 - ...SRC means main business logic
 - ...JCL means job to process business  
 - ...MAP means Virtual credit Bank panel
-- ...doc/xls means for some design
+- ...Dco folder means for some design doc
 - ...img folder means for some some screenshot  
+
+## screenshot
+![菜单](menu.png)
+![界面](show.png)
